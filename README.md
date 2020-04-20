@@ -6,6 +6,11 @@ This course is created out of frustration of not finding any course online or an
 
 In this course, I will be covering all the basics of Python (in-depth lessons will be added later on) so that you can get started in the language very quickly.
 
+
+- [Setting up the environment](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#setting-up-the-environment)
+- [Hello World](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#hello-world)
+
+
 ## Setting up the environment
 You can consider installing Python 3. I recommend using vs-code to code. It has lots of extensions to configure so that you can setup your environment in just few minutes.
 
