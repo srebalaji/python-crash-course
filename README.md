@@ -19,4 +19,4 @@ You can consider installing Python 3. I recommend using vs-code to code. It has 
 print("Hello world")
 ```
 
-I think pretty sure how to run this program :P. Save the program with `.py` extension. And run `python hello.py`
+I think pretty sure how to run this program :P. Save the program with `.py` extension. And run `python hello.py` or `python3 hello.py`
