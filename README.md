@@ -9,6 +9,7 @@ In this course, I will be covering all the basics of Python (in-depth lessons wi
 
 - [Setting up the environment](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#setting-up-the-environment)
 - [Hello World](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#hello-world)
+- [Variables and data types](https://github.com/srebalaji/python-crash-course-for-non-python-programmers/blob/master/README.md#variables-and-data-types)
 
 
 ## Setting up the environment
