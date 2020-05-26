@@ -7,9 +7,24 @@ This course is created out of frustration of not finding any course online or an
 In this course, I will be covering all the basics of Python (in-depth lessons will be added later on) so that you can get started in the language very quickly.
 
 
-- [Setting up the environment](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#setting-up-the-environment)
-- [Hello World](https://github.com/srebalaji/python-crash-course-for-non-python-programmers#hello-world)
-- [Variables and data types](https://github.com/srebalaji/python-crash-course-for-non-python-programmers/blob/master/README.md#variables-and-data-types)
+- [Setting up the environment](https://github.com/srebalaji/python-crash-course#setting-up-the-environment)
+- [Hello World](https://github.com/srebalaji/python-crash-course#hello-world)
+- [Variables and data types](https://github.com/srebalaji/python-crash-course/blob/master/README.md#variables-and-data-types)
+  - [Strings](https://github.com/srebalaji/python-crash-course/blob/master/README.md#strings)
+  - [Numbers](https://github.com/srebalaji/python-crash-course/blob/master/README.md#numbers)
+  - [Float](https://github.com/srebalaji/python-crash-course/blob/master/README.md#float)
+  - [Bool](https://github.com/srebalaji/python-crash-course/blob/master/README.md#bool)
+  - [List](https://github.com/srebalaji/python-crash-course/blob/master/README.md#list)
+  - [Tuple](https://github.com/srebalaji/python-crash-course/blob/master/README.md#tuple)
+  - [Sets](https://github.com/srebalaji/python-crash-course/blob/master/README.md#sets)
+  - [Dictionary](https://github.com/srebalaji/python-crash-course/blob/master/README.md#Dictionaries)
+- [if..else](https://github.com/srebalaji/python-crash-course/blob/master/README.md#ifelse)
+- [Loops](https://github.com/srebalaji/python-crash-course/blob/master/README.md#loops)
+- [Functions](https://github.com/srebalaji/python-crash-course/blob/master/README.md#functions)
+- [Classes](https://github.com/srebalaji/python-crash-course/blob/master/README.md#classes)
+- [Modules](https://github.com/srebalaji/python-crash-course/blob/master/README.md#modules)
+- [Truthy and Falsy values](https://github.com/srebalaji/python-crash-course/blob/master/README.md#truthy-and-falsy-values)
+- [Exception handling](https://github.com/srebalaji/python-crash-course/blob/master/README.md#exception-handling)
 
 
 ## Setting up the environment
