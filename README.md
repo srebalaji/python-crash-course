@@ -229,18 +229,18 @@ del user['age']
 
 # Example of nested dict.
 user = {
-	'id': 1,
+  'id': 1,
   'name': 'John wick',
   'cars': ['audi', 'bmw', 'tesla'],
   'projects': [
-	  {
-	    'id': 10,
-	    'name': 'Project 1'
-	  },
-	  {
-	    'id': 11,
-	    'name': 'Project 2'
-	  }
+    {
+      'id': 10,
+      'name': 'Project 1'
+    },
+    {
+      'id': 11,
+      'name': 'Project 2'
+    }
   ]
 }
 
@@ -256,29 +256,29 @@ b = 10
 
 # See for the indentation. Indentations are very important in Python. Python will throw error if indentations are proper.
 if a == 5:
-	print('Awesome')
+  print('Awesome')
 
 # and is equivalent to && 
 if a == 5 and b == 10:
-	print('A is five and b is ten')
+  print('A is five and b is ten')
 
 # if else statement. This is same as most of the languages.
 if a == 5:
-	print('A is five')
+  print('A is five')
 elif a == 6:
-	print('A is six')
+  print('A is six')
 elif a == 7:
-	print('A is seven')
+  print('A is seven')
 else:
-	print('A is some number')
+  print('A is some number')
 
 # or is equivalent to ||
 if a < 6 or a == 10:
-	print('A should be less than 6 or should be equal to ten')
+  print('A should be less than 6 or should be equal to ten')
 
 # not is equivalent to !
 if not a == 10:
-	print('A is not equal to 10')
+  print('A is not equal to 10')
 
 # This is the short-hand notation of if statement.
 if a == 5: print('A is five')
@@ -297,24 +297,24 @@ Python has two types of loops
 # The following while print till 5. Remember the indentation.
 i = 0
 while i <= 5:
-	print(i)
-	i += 1
+  print(i)
+  i += 1
 
 # Using brake or continue in while loop
 i = 0
 while i <= 5:
-	print(i)
-	i += 1
-	if i == 2:
-		break # You can try using continue here
+  print(i)
+  i += 1
+  if i == 2:
+    break # You can try using continue here
 
 # Here comes the interesting part. While loop has else part. Else part will execute once the entire loop is completed.
 i = 10
 while i <= 15:
-	print(i)
-	i += 1
+  print(i)
+  i += 1
 else:
-	print('Completed')
+  print('Completed')
 
 # Output
 10
@@ -328,12 +328,12 @@ Completed
 # But if you are using break in the loop, then Python will break out of the entire loop and it won't execute else part.
 i = 10
 while i <= 15:
-	print(i)
-	i += 1
-	if i == 13:
-		break
+  print(i)
+  i += 1
+  if i == 13:
+    break
 else:
-	print('Completed')
+  print('Completed')
 
 # Output
 10
@@ -347,11 +347,11 @@ else:
 
 arr = ['a', 'b', 'c', 'd', 'e']
 for ele in arr: # Prints every element in an array
-	print(ele)
+  print(ele)
 
 word = "python"
 for char in word: # Prints every char in the word
-	print(char)
+  print(char)
 
 # You can use break, continue and else part in for-loop also.
 
@@ -369,33 +369,33 @@ range(1, 4) # This code generates a sequence from 1 to 3.
 range(1, 8, 2) # This code generates a sequence with 1, 3, 5, 7
 
 for ele in range(3): # Prints from 0 to 2. 
-	print(ele)
+  print(ele)
 
 # In the below example, you can see I have used range to iterate through an array with index.
 for index in range(0, len(arr)):
-	print(arr[index])
+  print(arr[index])
 
 dict = {'name': 'John wick'}
 
 # You can iterate through a dictionary. items() will return both keys and values. You can also use keys() and values() if needed. 
 for key, value in dict.items():
-	print(key + " is " + value)
+  print(key + " is " + value)
 
 # You can also use a built-in function enumerate(). enumurate() will return a tuple with index. It is mostly used to add a counter to the iterable objects in Python.
 for index, value in enumerate(arr):
-	print(value + " is present in " + str(index))
+  print(value + " is present in " + str(index))
 ```
 
 ## Functions
 ```python
 def prints_hello_world():
-	print('Hello world from Python')
+  print('Hello world from Python')
 
 prints_hello_world()
 
 # Return statement
 def prints_something(something):
-	return something + ' from Python'
+  return something + ' from Python'
 
 print(prints_something('Hello world'))
 
@@ -404,11 +404,11 @@ print(prints_something())
 
 # Default parameter. I think its common in most languages now.
 def prints_something(something = 'Hello world'):
-	print(something + ' from Python')
+  print(something + ' from Python')
 
 # keyword arguments. You can pass explicitly which parameter should be matched. In this way, you don't have to send the arguments in order just explicitly mention the parameter name.
 def movie_info(title, director_name, ratings):
-	print(title + " - " + director_name + " - " + ratings)
+  print(title + " - " + director_name + " - " + ratings)
 
 movie_info(ratings='9/10', director_name='David Fincher', title='Fight Club')
 
@@ -417,14 +417,14 @@ movie_info(ratings='9/10', director_name='David Fincher', title='Fight Club')
 # Sometimes, you dont know how many arguments are passed. In that case, you have ask Python to accept as many arguments as possible.
 
 def languages(*names):
-	print(names) # ('Python', 'Ruby', 'JavaScript', 'Go'). This is a tuple.
-	return 'You have mentioned '+ str(len(names))+ ' languages'
+  print(names) # ('Python', 'Ruby', 'JavaScript', 'Go'). This is a tuple.
+  return 'You have mentioned '+ str(len(names))+ ' languages'
 
 print(languages('Python', 'Ruby', 'JavaScript', 'Go')) # You have mentioned 4 languages
 
 def languages(fav_language, *names):
-	print(names) # ('Ruby', 'JavaScript', 'Go')
-	return 'My favorite language is ' + fav_language+ '. And Im planning to learn other '+ str(len(names))+ ' languages too'
+  print(names) # ('Ruby', 'JavaScript', 'Go')
+  return 'My favorite language is ' + fav_language+ '. And Im planning to learn other '+ str(len(names))+ ' languages too'
 
 print(languages('Python', 'Ruby', 'JavaScript', 'Go')) # My favorite language is Python. And Im planning to learn other 3 languages too
 
@@ -433,7 +433,7 @@ print(languages('Python', 'Ruby', 'JavaScript', 'Go')) # My favorite language is
 # These types of arguments are useful when you don't know what kind of parameters are passed. In the previous case, it's useful when you don't know how many number of parameters are passed but in this case, you don't know what type of information will be passed.
 
 def user_info(**info):
-	print(info) # {'id': 1, 'name': 'Srebalaji', 'fav_language': ['Python', 'Ruby']} This is a dictionary
+  print(info) # {'id': 1, 'name': 'Srebalaji', 'fav_language': ['Python', 'Ruby']} This is a dictionary
 
 # Arbitrary keyword args will always expect to mention the parameters explicitly
 user_info(id=1, name='Srebalaji', fav_language=['Python', 'Ruby'])
@@ -442,7 +442,7 @@ user_info(id=1, name='Srebalaji', fav_language=['Python', 'Ruby'])
 user_info(1, 'Srebalaji')
 
 def user_info(id, name, **info):
-	print(info) # {'fav_language': ['Python', 'Ruby'], 'twitter_handle': '@srebalaji'}
+  print(info) # {'fav_language': ['Python', 'Ruby'], 'twitter_handle': '@srebalaji'}
 
 user_info(1, 'Srebalaji', fav_language=['Python', 'Ruby'], twitter_handle='@srebalaji')
 
@@ -454,16 +454,16 @@ user_info(1, 'Srebalaji', fav_language=['Python', 'Ruby'], twitter_handle='@sreb
 
 # It's a convention that the class name starts with caps. But Python doesn't throw any error if you are not following it.
 class Animal():
-	# This is the constructor.
-	# As you can see in every method of the class I have passed 'self' as the first parameter. The first parameter is always expected to be the current instance of the class and it is mandatory to pass the instance in the first parameter. And you can name that variable whatever you like.
-	def __init__(self, name): 
-		self.name = name
+  # This is the constructor.
+  # As you can see in every method of the class I have passed 'self' as the first parameter. The first parameter is always expected to be the current instance of the class and it is mandatory to pass the instance in the first parameter. And you can name that variable whatever you like.
+  def __init__(self, name): 
+    self.name = name
 
-	def eat(self):
-		print(self.name +' eats')
+  def eat(self):
+    print(self.name +' eats')
 
-	def sleep(self):
-		print(self.name+' sleeps')
+  def sleep(self):
+    print(self.name+' sleeps')
 
 # Initiating a class
 dog = Animal('harry')
@@ -481,16 +481,16 @@ print(dog.name) # 'Rosie'
 # These attributes can only be accessed within the class and also by the sub-class.
 
 class Person():
-	# You can see that I have used different name for the first parameter.
-	def __init__(my_instance, name):
-		# 'name' attribute is protected.
-		my_instance._name = name
+  # You can see that I have used different name for the first parameter.
+  def __init__(my_instance, name):
+    # 'name' attribute is protected.
+    my_instance._name = name
 
-	def reads(my_instance):
-		print(my_instance._name + ' reads')
+  def reads(my_instance):
+    print(my_instance._name + ' reads')
 
-	def writes(my_object):
-		print(my_object._name + ' writes')
+  def writes(my_object):
+    print(my_object._name + ' writes')
 
 
 person1 = Person('Ram')
@@ -507,18 +507,18 @@ print(person1._name) # I can still change
 # Protected can useful sometimes. Let's see how private attributes works. That can be a life saver sometimes.
 
 class Person():
-	def __init__(self, name):
-		# 'name' attribute is private.
-		self.__name = name
+  def __init__(self, name):
+    # 'name' attribute is private.
+    self.__name = name
 
-	def reads(self):
-		print(self.__name + ' reads')
+  def reads(self):
+    print(self.__name + ' reads')
 
-	def writes(self):
-		print(self.__name + ' writes')
-	
+  def writes(self):
+    print(self.__name + ' writes')
+  
   # This is a private method. This can't be accessed outside the class.
-	def __some_helper_method():
+  def __some_helper_method():
       print('Some helper method.')
 
 
@@ -543,22 +543,22 @@ print(person1._Person__name) # Hari.
 # Inheritance
 
 class Animal():
-	def __init__(self, name):
-		self.name = name
+  def __init__(self, name):
+    self.name = name
 
-	def eat(self):
-		print('Animal eats')
+  def eat(self):
+    print('Animal eats')
 
-	def sleep(self):
-		print('Animal sleeps')
+  def sleep(self):
+    print('Animal sleeps')
 
 # Dog is a sub class of Animal
 class Dog(Animal):
-	def __init__(self, name):
-		self.name = name
+  def __init__(self, name):
+    self.name = name
 
-	def eat(self):
-		print('Dog eats')
+  def eat(self):
+    print('Dog eats')
 
 
 dog1 = Dog('harry')
@@ -574,10 +574,10 @@ dog1.sleep() # Animal sleeps
 # calculations.py
 
 def add(a, b):
-	return a + b
+  return a + b
 
 def substract(a, b):
-	return a - b
+  return a - b
 
 # consider another file which we consider as a main file.
 # main.py
@@ -643,53 +643,53 @@ bool(any_object) # returns True or False
 ```python
 # The code which can raise exceptions can be wrapped in 'try' statement. 'except' will handle that exception.
 try:
-	some_error_raised
+  some_error_raised
 except:
-	print('Exception handled')
+  print('Exception handled')
 
 # Every exception in Python will inherit from 'exception' class. 
 
 # In the below example, you can see that the 'NameError' is the exception class derived from the main 'Exception' class.
 try:
-	some_error_raised
+  some_error_raised
 except Exception as e:
-	print('Exception raised')
-	print(e.__class__) # <class 'NameError'>
+  print('Exception raised')
+  print(e.__class__) # <class 'NameError'>
 
 # 'else' block will execute if the code in the 'try' block has raised no exception. This will be useful in many situations.
 
 try:
-	some_error_raised
+  some_error_raised
 except:
-	print('Exception handled')
+  print('Exception handled')
 else:
-	print('No error raised. You can resume your operation here') # this code will execute if no error is raised in the 'try' block
+  print('No error raised. You can resume your operation here') # this code will execute if no error is raised in the 'try' block
 
 # final block
 # Code in 'finally' block will execute no matter whether the exception is raised or not.
 try:
-	some_error_raised
+  some_error_raised
 except Exception as e:
-	print('Exception raised')
+  print('Exception raised')
 else:
-	print('This will execute if no error is raised in try')
+  print('This will execute if no error is raised in try')
 finally:
-	print('This code will run whether the code has error or not.')
+  print('This code will run whether the code has error or not.')
 
 
 # Raise your own exception. You can also create your own exception class inherited from Exception class.
 try:
-	raise ZeroDivisionError # Python built-in exception class
+  raise ZeroDivisionError # Python built-in exception class
 except Exception as e:
-	print(e.__class__) # <class 'ZeroDivisionError'>
+  print(e.__class__) # <class 'ZeroDivisionError'>
 
 # Catch a specific exception.
 try:
-	raise ZeroDivisionError # Python built-in exception class
+  raise ZeroDivisionError # Python built-in exception class
 except TypeError as e:
-	print('Only type error exception is captured')
+  print('Only type error exception is captured')
 except ZeroDivisionError as e:
-	print('Only zero division exception is captured')
+  print('Only zero division exception is captured')
 except Exception as e:
-	print('Other execeptions')
+  print('Other execeptions')
 ```
