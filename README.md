@@ -186,7 +186,7 @@ print(alpha) # set(['a', 'c', 'b']) As you can see, duplicates are removed in se
 # Accessing items in set
 # You can't access by index because Sets are unordered. You can access it only by loop. Don't worry about the for loop, we will get that in-depth in the following section.
 for ele in alpha:
-	print(ele)
+  print(ele)
 
 # To add element into the set
 alpha.add('s')
