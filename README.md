@@ -6,7 +6,12 @@ This course is created out of frustration of not finding any course online or an
 
 In this course, I will be covering all the basics of Python (in-depth lessons will be added later on) so that you can get started in the language very quickly.
 
+#### P.S If you want to cover some specific topic, you can raise a PR.
 
+## Contributing
+If you want to contribute to this repo you can raise PR with relevant topics. You are also welcome to add content to existing topics. :)
+
+## Table of contents
 - [Setting up the environment](https://github.com/srebalaji/python-crash-course#setting-up-the-environment)
 - [Hello World](https://github.com/srebalaji/python-crash-course#hello-world)
 - [Variables and data types](https://github.com/srebalaji/python-crash-course/blob/master/README.md#variables-and-data-types)
