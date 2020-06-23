@@ -265,6 +265,18 @@ user = {
 }
 
 # We will see, how to loop through the dict in for loop section.
+
+```
+
+## Variable Type Hinting
+You can 'hint' the type of a variable.
+
+```python
+
+# In this case, the type of 'name' will be a str & the type of 'age' will be an int
+name: str = 'Alan Turing'
+age: int = 18
+
 ```
 
 
@@ -465,6 +477,26 @@ def user_info(id, name, **info):
   print(info) # {'fav_language': ['Python', 'Ruby'], 'twitter_handle': '@srebalaji'}
 
 user_info(1, 'Srebalaji', fav_language=['Python', 'Ruby'], twitter_handle='@srebalaji')
+
+
+# Lambda (Anonymous Functions)
+add = lambda a, b : a + b
+print(add(5, 6))
+
+# The power of lambda is better shown when you use them as an anonymous function inside another function.
+# Say you have a function definition that takes one argument, and that argument will be multiplied with an unknown number:
+def double(n):
+  return lambda a: a * n
+
+# Use that function definition to make a function that always doubles the number you send in:
+mydoubler = double(2)
+print(mydoubler(5))  # Result: 10
+
+
+# Type hinting in functions: allows you to 'hint' the type for arguments and the return statement
+# In the example below, the argument is supposed to be an int and the return type is supposed to be a str
+def typeHint(param: int) -> str:
+    return ""
 
 ```
 
