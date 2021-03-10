@@ -286,7 +286,7 @@ You all know how `if..else` statement works.
 a = 5
 b = 10
 
-# See for the indentation. Indentations are very important in Python. Python will throw error if indentations are proper.
+# See for the indentation. Indentations are very important in Python. Python will throw error if indentations are not proper.
 if a == 5:
   print('Awesome')
 
