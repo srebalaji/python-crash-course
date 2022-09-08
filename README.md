@@ -332,7 +332,7 @@ while i <= 5:
   print(i)
   i += 1
 
-# Using brake or continue in while loop
+# Using break or continue in while loop
 i = 0
 while i <= 5:
   print(i)
